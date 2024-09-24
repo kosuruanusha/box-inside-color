@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #container{
+        width: 80%;
+        aspect-ratio: 2/1;
+        margin: auto;
+        padding: 0 50px;
+        border: solid black 2px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space:nowrap;
+        scroll-snap-type: x mandatory;
+       }
+       .blue{
+        background-color: lightblue;
+        height: 95%;
+        aspect-ratio: 1/1;
+       }
+       .green{
+        background-color: rgb(93, 222, 140);
+        height: 80%;
+        aspect-ratio: 1/2;
+       }
+       .blue,.green{
+        display: inline-block;
+        margin: 2px;
+        scroll-margin-inline:20px;
+        scroll-snap-align:none start;  
+       }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="blue"></div>
+        <div class="green"></div>
+        <div class="blue"></div>
+        <div class="green"></div>
+        <div class="blue"></div>
+        <div class="green"></div>
+        <div class="blue"></div>
+
+       </div>
+    
+</body>
+</html>
